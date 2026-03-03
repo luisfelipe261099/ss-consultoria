@@ -82,7 +82,8 @@ include 'includes/header.php';
 <!-- SERVIÇOS -->
 <section class="servicos" id="servicos">
     <div class="servicos-inner">
-        <h2>Nossos Serviços</h2>
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="servicos-subtitle">Soluções inteligentes e sustentáveis para sua empresa.</p>
         <div class="servicos-grid">
             <?php foreach ($services as $service): ?>
                 <div class="service-card">
