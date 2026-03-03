@@ -33,7 +33,7 @@ include 'includes/header.php';
         </p>
     </div>
     <div class="sobre-img-frame">
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Nosso Escritório">
+        <img src="logo2.png" alt="SS Consultoria Ambiental">
     </div>
 </section>
 

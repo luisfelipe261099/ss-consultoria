@@ -115,27 +115,6 @@ include 'includes/header.php';
     </div>
 </section>
 
-<!-- NOSSOS CLIENTES -->
-<section class="clientes">
-    <div class="clientes-inner">
-        <h2 class="section-title">Confiam em nosso trabalho</h2>
-        <div class="clientes-grid">
-            <div class="cliente-logo"><img src="https://via.placeholder.com/200x80/FFFFFF/666666?text=CLIENTE+1"
-                    alt="Cliente 1"></div>
-            <div class="cliente-logo"><img src="https://via.placeholder.com/200x80/FFFFFF/666666?text=CLIENTE+2"
-                    alt="Cliente 2"></div>
-            <div class="cliente-logo"><img src="https://via.placeholder.com/200x80/FFFFFF/666666?text=CLIENTE+3"
-                    alt="Cliente 3"></div>
-            <div class="cliente-logo"><img src="https://via.placeholder.com/200x80/FFFFFF/666666?text=CLIENTE+4"
-                    alt="Cliente 4"></div>
-            <div class="cliente-logo"><img src="https://via.placeholder.com/200x80/FFFFFF/666666?text=CLIENTE+5"
-                    alt="Cliente 5"></div>
-            <div class="cliente-logo"><img src="https://via.placeholder.com/200x80/FFFFFF/666666?text=CLIENTE+6"
-                    alt="Cliente 6"></div>
-        </div>
-    </div>
-</section>
-
 <!-- CONTATO -->
 <section class="contato" id="contato">
     <h2>Entre em Contato Conosco</h2>

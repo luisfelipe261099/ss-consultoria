@@ -15,20 +15,17 @@
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('1.png');
+    background-image: url('../../1.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.55;
+    opacity: 0.8;
     background-attachment: fixed;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(105deg,
-            rgba(10, 30, 10, 0.85) 0%,
-            rgba(10, 30, 10, 0.6) 50%,
-            rgba(10, 30, 10, 0.2) 100%);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .hero-content {
@@ -72,37 +69,43 @@
     padding: 120px 40px;
     text-align: center;
     overflow: hidden;
+    color: white;
 }
 
 .sobre-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1400&q=60');
+    background-image: url('../../2.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.12;
+    opacity: 1;
 }
 
 .sobre::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, #e8f5e9 0%, #f0faf0 40%, #e0f2f1 100%);
-    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
 }
 
 .sobre-inner {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 60px;
+    border-radius: 24px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .section-title {
     font-family: var(--font-main);
     font-size: clamp(28px, 4vw, 42px);
     font-weight: 800;
-    color: var(--teal-dark);
+    color: var(--green-light);
     margin-bottom: 12px;
 }
 
@@ -110,14 +113,14 @@
     font-family: var(--font-main);
     font-size: 22px;
     font-weight: 600;
-    color: var(--dark);
+    color: #fff;
     margin-bottom: 24px;
     line-height: 1.4;
 }
 
 .sobre p {
-    color: var(--gray);
-    font-size: clamp(15px, 2vw, 17px);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(16px, 2vw, 18px);
     line-height: 1.8;
     margin-bottom: 36px;
 }
@@ -202,43 +205,7 @@
     letter-spacing: 1px;
 }
 
-/* ===== CLIENTES (Index) ===== */
-.clientes {
-    padding: 100px 40px;
-    background: #fcfdfc;
-}
-
-.clientes-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.clientes-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 50px;
-}
-
-.cliente-logo {
-    width: 180px;
-    filter: grayscale(1);
-    opacity: 0.5;
-    transition: var(--transition);
-}
-
-.cliente-logo:hover {
-    filter: grayscale(0);
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-.cliente-logo img {
-    width: 100%;
-}
+/* Seção de Clientes removida por solicitação */
 
 /* ===== CONTATO (Index) ===== */
 .contato {

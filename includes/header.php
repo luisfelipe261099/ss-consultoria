@@ -54,7 +54,6 @@ if (!isset($page_description))
             <li><a href="sobre.php">Sobre Nós</a></li>
             <li><a href="index.php#servicos">Serviços</a></li>
             <li><a href="projetos.php">Projetos</a></li>
-            <li><a href="index.php#contato">Contato</a></li>
             <li><a href="index.php#contato" class="nav-cta">Contato</a></li>
         </ul>
     </nav>
