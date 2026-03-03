@@ -2,11 +2,11 @@
     "version": 2,
     "builds": [
         {
-            "src": "*.php",
+            "src": "**/*.php",
             "use": "vercel-php@0.7.2"
         },
         {
-            "src": "*.+(png|jpg|jpeg|gif|svg|ico|css|js)",
+            "src": "**/*.+(png|jpg|jpeg|gif|svg|ico|css|js|webp|avif)",
             "use": "@vercel/static"
         }
     ],
@@ -16,8 +16,12 @@
             "dest": "/$1.php"
         },
         {
+            "handle": "filesystem"
+        },
+        {
             "src": "/(.*)",
-            "dest": "/$1"
+            "dest": "/404.php",
+            "status": 404
         }
     ]
 }

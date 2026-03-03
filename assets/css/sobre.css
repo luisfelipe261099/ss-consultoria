@@ -1,0 +1,169 @@
+/* 
+   SS Consultoria Ambiental - Sobre Page Specific Styles
+*/
+
+body {
+    background-color: #fcfdfc;
+}
+
+/* ===== CONTEUDO SOBRE ===== */
+.sobre-intro {
+    padding: 120px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sobre-text h2 {
+    font-family: var(--font-main);
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.sobre-text span {
+    color: var(--green-dark);
+}
+
+.sobre-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.sobre-img-frame {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+.sobre-img-frame img {
+    width: 100%;
+    display: block;
+    transition: var(--transition);
+}
+
+.sobre-img-frame:hover img {
+    transform: scale(1.05);
+}
+
+/* ===== MISSÃO VISÃO VALORES ===== */
+.mvv-section {
+    background: var(--gray-light);
+    padding: 120px 40px;
+}
+
+.mvv-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.mvv-card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.mvv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.mvv-icon {
+    font-size: 48px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.mvv-card h3 {
+    font-family: var(--font-main);
+    color: var(--teal-dark);
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.mvv-card p {
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+/* ===== DIFERENCIAIS ===== */
+.diferenciais {
+    padding: 120px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.diferenciais h2 {
+    font-family: var(--font-main);
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+.dif-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    text-align: left;
+}
+
+.dif-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    border-left: 6px solid var(--green);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: var(--transition);
+}
+
+.dif-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.dif-item strong {
+    display: block;
+    color: var(--dark);
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.dif-item span {
+    font-size: 15px;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* ===== RESPONSIVE SOBRE ===== */
+@media (max-width: 900px) {
+    .sobre-intro {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 80px 20px;
+    }
+
+    .dif-list {
+        grid-template-columns: 1fr;
+    }
+}
